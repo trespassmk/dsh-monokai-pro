@@ -10,7 +10,8 @@ Official palette values from the Monokai Pro VS Code extension (2.0.16) — not 
 Delivered as a Cordis bundle with a Client half, so it survives restarts and applies to the running page.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-FFD866.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.1.0-FF6188.svg)](package.json)
+[![Version](https://img.shields.io/badge/version-1.1.1-FF6188.svg)](package.json)
+[![npm](https://img.shields.io/npm/v/dsh-monokai-pro.svg?color=78DCE8&logo=npm)](https://www.npmjs.com/package/dsh-monokai-pro)
 [![Filters](https://img.shields.io/badge/filters-6-78DCE8.svg)](#highlights)
 
 </div>
@@ -30,13 +31,53 @@ Delivered as a Cordis bundle with a Client half, so it survives restarts and app
 - **Code-first typography** — Avenir Next → Inter → Segoe UI Variable Text in the UI, JetBrains Mono → Cascadia Code → Fira Code → SF Mono in code. A user font chosen in **Settings → General → Font settings** still wins.
 - **Light mode included** — the official Monokai Pro Light counterpart (`#FAF4F2` canvas, `#EDE7E5` sidebar, `#29242A` text), so switching Appearance to Light never leaves half-themed surfaces. Filters apply to dark only.
 
-## Using it
+## What is DSH?
 
-1. Install the bundle: `dsh plugin add dsh-monokai-pro`.
-2. Reload the Web page once after installing or updating the bundle, so the browser loads the current `client.js` generation.
-3. Open **Settings → General** — the **Monokai Pro** row sits after Transcript view.
-4. The switch is on by default on first install, and that first activation also sets the appearance preference to **Dark**. Turning the switch off removes the token layer immediately and leaves the built-in palette in place.
-5. Pick a filter with the swatches under the description: each dot previews the variant's canvas (lower-left half) and its pink accent (upper-right half).
+DeepSeek Harness (DSH) boots a profile — an ordered stack of plugin-bundle patch layers on top of a DeepSeek app (web GUI, TUI, headless…). This package is one of those plugin bundles: it carries no Host code, only a Client half that injects the theme into the Web GUI.
+
+## Installation
+
+**Requirements**
+
+- A working DSH install (`dsh` on your `PATH`) with a profile that includes the Web GUI, e.g. `web`.
+- No build step and no peer dependencies — `client.js` ships as written.
+
+**From npm (recommended)**
+
+```sh
+dsh plugin --profile <name> add dsh-monokai-pro
+```
+
+For the default Web GUI profile that is:
+
+```sh
+dsh plugin --profile web add dsh-monokai-pro
+```
+
+The package is `dsh-monokai-pro` on the [npm registry](https://www.npmjs.com/package/dsh-monokai-pro); `dsh plugin … add` delegates to pnpm, so `npm`/`pnpm` dist-tags and version ranges work the same way.
+
+**From GitHub**
+
+The npm package and this repository are published in lockstep — installing from npm is always the easier path. To hack on the theme instead, clone the repo and install it from the local directory:
+
+```sh
+git clone https://github.com/trespassmk/dsh-monokai-pro.git
+dsh plugin --profile web add ./dsh-monokai-pro
+```
+
+**After installing**
+
+1. Reload the Web page once after installing or updating the bundle, so the browser loads the current `client.js` generation.
+2. Open **Settings → General** — the **Monokai Pro** row sits after Transcript view.
+3. The switch is on by default on first install, and that first activation also sets the appearance preference to **Dark**. Turning the switch off removes the token layer immediately and leaves the built-in palette in place.
+4. Pick a filter with the swatches under the description: each dot previews the variant's canvas (lower-left half) and its pink accent (upper-right half).
+
+**Updating & removal**
+
+```sh
+dsh plugin --profile web add dsh-monokai-pro@latest   # update
+dsh plugin --profile web remove dsh-monokai-pro       # remove
+```
 
 > The switch state and the filter choice are browser-local (`localStorage`, keys `dsh.plugin.monokai-pro.enabled` and `dsh.plugin.monokai-pro.variant`). The theme service persists only the built-in `light` / `dark` / `system` preference, so a third-party layer cannot store its own id in the Host settings document — the palette itself always reapplies on reload.
 
