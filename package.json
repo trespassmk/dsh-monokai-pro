@@ -6,7 +6,7 @@
   "homepage": "https://github.com/trespassmk/dsh-monokai-pro",
   "repository": {
     "type": "git",
-    "url": "https://github.com/trespassmk/dsh-monokai-pro.git"
+    "url": "git+https://github.com/trespassmk/dsh-monokai-pro.git"
   },
   "license": "MIT",
   "keywords": [
