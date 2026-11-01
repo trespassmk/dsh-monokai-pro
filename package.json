@@ -1,5 +1,5 @@
 {
-  "name": "@local/dsh-monokai-pro",
+  "name": "dsh-monokai-pro",
   "version": "1.1.0",
   "type": "module",
   "description": "Monokai Pro dark theme for the DeepSeek Harness Web GUI — six official filters, syntax highlighting, and a General settings switch.",
@@ -9,6 +9,14 @@
     "url": "https://github.com/trespassmk/dsh-monokai-pro.git"
   },
   "license": "MIT",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "theme",
+    "monokai-pro",
+    "monokai"
+  ],
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",

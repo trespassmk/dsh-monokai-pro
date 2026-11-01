@@ -32,7 +32,7 @@ Delivered as a Cordis bundle with a Client half, so it survives restarts and app
 
 ## Using it
 
-1. Install the bundle (already done for this profile).
+1. Install the bundle: `dsh plugin add dsh-monokai-pro`.
 2. Reload the Web page once after installing or updating the bundle, so the browser loads the current `client.js` generation.
 3. Open **Settings → General** — the **Monokai Pro** row sits after Transcript view.
 4. The switch is on by default on first install, and that first activation also sets the appearance preference to **Dark**. Turning the switch off removes the token layer immediately and leaves the built-in palette in place.

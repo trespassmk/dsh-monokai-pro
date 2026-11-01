@@ -1,11 +1,11 @@
 window.__ModuleLoader__.load({
-  id: '@local/dsh-monokai-pro',
+  id: 'dsh-monokai-pro',
   factory(require) {
     const React = require('react');
     const h = React.createElement;
 
     /** Package id; also names the theme override layer for inspection. */
-    const PACKAGE = '@local/dsh-monokai-pro';
+    const PACKAGE = 'dsh-monokai-pro';
     /** Locale namespace owning the settings-row copy. */
     const NS = 'monokai-pro';
     /** Browser-local switch state; the theme service cannot persist third-party ids. */

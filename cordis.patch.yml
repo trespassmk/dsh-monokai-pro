@@ -2,4 +2,4 @@
 # See README.md for the full theme documentation.
 - insert:
     - id: monokai-pro
-      name: "@local/dsh-monokai-pro"
+      name: "dsh-monokai-pro"
