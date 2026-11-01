@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 716 112" width="716" height="112" role="img" aria-label="The six Monokai Pro filters">
+  <style>text{font:600 12px "JetBrains Mono","Cascadia Code",Consolas,monospace}</style>
+  <rect width="716" height="112" rx="14" fill="#19181A"/>
+  <g transform="translate(8 8)">
+    <rect width="110" height="96" rx="10" fill="#2D2A2E"/>
+    <text x="14" y="30" fill="#FCFCFA">Pro</text>
+    <circle cx="18" cy="68" r="5.5" fill="#FF6188"/><circle cx="33" cy="68" r="5.5" fill="#FC9867"/><circle cx="48" cy="68" r="5.5" fill="#FFD866"/>
+    <circle cx="63" cy="68" r="5.5" fill="#A9DC76"/><circle cx="78" cy="68" r="5.5" fill="#78DCE8"/><circle cx="93" cy="68" r="5.5" fill="#AB9DF2"/>
+  </g>
+  <g transform="translate(126 8)">
+    <rect width="110" height="96" rx="10" fill="#272822"/>
+    <text x="14" y="30" fill="#FDFFF1">Classic</text>
+    <circle cx="18" cy="68" r="5.5" fill="#F92672"/><circle cx="33" cy="68" r="5.5" fill="#FD971F"/><circle cx="48" cy="68" r="5.5" fill="#E6DB74"/>
+    <circle cx="63" cy="68" r="5.5" fill="#A6E22E"/><circle cx="78" cy="68" r="5.5" fill="#66D9EF"/><circle cx="93" cy="68" r="5.5" fill="#AE81FF"/>
+  </g>
+  <g transform="translate(244 8)">
+    <rect width="110" height="96" rx="10" fill="#282A3A"/>
+    <text x="14" y="30" fill="#EAF2F1">Octagon</text>
+    <circle cx="18" cy="68" r="5.5" fill="#FF657A"/><circle cx="33" cy="68" r="5.5" fill="#FF9B5E"/><circle cx="48" cy="68" r="5.5" fill="#FFD76D"/>
+    <circle cx="63" cy="68" r="5.5" fill="#BAD761"/><circle cx="78" cy="68" r="5.5" fill="#9CD1BB"/><circle cx="93" cy="68" r="5.5" fill="#C39AC9"/>
+  </g>
+  <g transform="translate(362 8)">
+    <rect width="110" height="96" rx="10" fill="#2C2525"/>
+    <text x="14" y="30" fill="#FFF1F3">Ristretto</text>
+    <circle cx="18" cy="68" r="5.5" fill="#FD6883"/><circle cx="33" cy="68" r="5.5" fill="#F38D70"/><circle cx="48" cy="68" r="5.5" fill="#F9CC6C"/>
+    <circle cx="63" cy="68" r="5.5" fill="#ADDA78"/><circle cx="78" cy="68" r="5.5" fill="#85DACC"/><circle cx="93" cy="68" r="5.5" fill="#A8A9EB"/>
+  </g>
+  <g transform="translate(480 8)">
+    <rect width="110" height="96" rx="10" fill="#222222"/>
+    <text x="14" y="30" fill="#F7F1FF">Spectrum</text>
+    <circle cx="18" cy="68" r="5.5" fill="#FC618D"/><circle cx="33" cy="68" r="5.5" fill="#FD9353"/><circle cx="48" cy="68" r="5.5" fill="#FCE566"/>
+    <circle cx="63" cy="68" r="5.5" fill="#7BD88F"/><circle cx="78" cy="68" r="5.5" fill="#5AD4E6"/><circle cx="93" cy="68" r="5.5" fill="#948AE3"/>
+  </g>
+  <g transform="translate(598 8)">
+    <rect width="110" height="96" rx="10" fill="#273136"/>
+    <text x="14" y="30" fill="#F2FFFC">Machine</text>
+    <circle cx="18" cy="68" r="5.5" fill="#FF6D7E"/><circle cx="33" cy="68" r="5.5" fill="#FFB270"/><circle cx="48" cy="68" r="5.5" fill="#FFED72"/>
+    <circle cx="63" cy="68" r="5.5" fill="#A2E57B"/><circle cx="78" cy="68" r="5.5" fill="#7CD5F1"/><circle cx="93" cy="68" r="5.5" fill="#BAA0F8"/>
+  </g>
+</svg>
