@@ -1,0 +1,42 @@
+name: Publish
+
+# Publishes dsh-monokai-pro to npm via trusted publishing (OIDC). No npm token
+# is stored in the repository: the npm CLI exchanges this workflow's OIDC token
+# for a short-lived publish credential, which only works because the package's
+# "Trusted Publisher" on npmjs.com names this exact workflow file.
+#
+# One-time setup (see scripts/publish-wizard.sh): enable 2FA on the npm
+# account, configure the trusted publisher on npmjs.com, then push a v* tag.
+# A newly configured trusted publisher must complete its first successful
+# publish within 2 days or the configuration expires.
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Verify version matches tag
+        run: node -e "const p=require('./package.json');const t=process.env.GITHUB_REF_NAME;if(p.version!==t.slice(1)){console.error('package.json version '+p.version+' != tag '+t);process.exit(1)}"
+
+      - name: Syntax check
+        run: node --check client.js && node --check index.js
+
+      - name: Publish
+        run: npm publish
+        env:
+          NPM_CONFIG_PROVENANCE: true
