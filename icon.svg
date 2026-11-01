@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Monokai Pro theme">
+  <rect width="64" height="64" rx="14" fill="#221F22"/>
+  <rect x="4" y="4" width="56" height="56" rx="11" fill="#2D2A2E"/>
+  <path d="M17 41V23l7.5 10.5L32 23l7.5 10.5L47 23v18" fill="none" stroke="#FFD866" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="17" cy="47" r="2.4" fill="#FF6188"/>
+  <circle cx="23" cy="47" r="2.4" fill="#FC9867"/>
+  <circle cx="29" cy="47" r="2.4" fill="#FFD866"/>
+  <circle cx="35" cy="47" r="2.4" fill="#A9DC76"/>
+  <circle cx="41" cy="47" r="2.4" fill="#78DCE8"/>
+  <circle cx="47" cy="47" r="2.4" fill="#AB9DF2"/>
+</svg>
